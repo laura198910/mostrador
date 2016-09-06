@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Presupuesto:</strong>
+  <%= @presupuesto.presupuesto_id %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @presupuesto.fecha %>
+</p>
+
+<%= link_to 'Edit', edit_presupuesto_path(@presupuesto) %> |
+<%= link_to 'Back', presupuestos_path %>

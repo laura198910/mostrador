@@ -1,0 +1,1 @@
+json.array! @presupuesto_detalles, partial: 'presupuesto_detalles/presupuesto_detalle', as: :presupuesto_detalle

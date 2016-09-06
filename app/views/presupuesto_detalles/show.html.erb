@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Presupuesto detalle:</strong>
+  <%= @presupuesto_detalle.presupuesto_detalle_id %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @presupuesto_detalle.cantidad %>
+</p>
+
+<%= link_to 'Edit', edit_presupuesto_detalle_path(@presupuesto_detalle) %> |
+<%= link_to 'Back', presupuesto_detalles_path %>

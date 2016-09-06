@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Presupuestos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Presupuesto</th>
+      <th>Fecha</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @presupuestos.each do |presupuesto| %>
+      <tr>
+        <td><%= presupuesto.presupuesto_id %></td>
+        <td><%= presupuesto.fecha %></td>
+        <td><%= link_to 'Show', presupuesto %></td>
+        <td><%= link_to 'Edit', edit_presupuesto_path(presupuesto) %></td>
+        <td><%= link_to 'Destroy', presupuesto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Presupuesto', new_presupuesto_path %>

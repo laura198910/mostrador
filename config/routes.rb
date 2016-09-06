@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :presupuesto_detalles
+  resources :presupuestos
+  resources :productos
+  resources :categoria
+  resources :productos
   devise_for :users
   root "home#index"
 
