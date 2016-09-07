@@ -21,14 +21,19 @@
         <td><%= producto.descripcion %></td>
         <td><%= producto.categoria_id %></td>
         <td><%= producto.precio %></td>
-        <td><%= link_to 'Ver',  producto, class:"btn btn-success" %></td>
-        <td>
+        <td><%= link_to  producto, class:"btn btn-success"  do %>
+            Ver
+            <i class="glyphicon glyphicon-plus"></i>
+          <% end %>
           <%= link_to edit_producto_path(producto), class:" btn btn-info" do  %>
             Editar
             <i class="glyphicon glyphicon-pencil"></i>
           <% end %>
+          <%= link_to  producto, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' do %>
+            Eliminar
+            <i class="glyphicon glyphicon-trash"></i>
+          <% end %>
         </td>
-        <td><%= link_to 'Eliminar', producto, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-mini btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
