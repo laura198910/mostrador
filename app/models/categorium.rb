@@ -1,3 +1,3 @@
 class Categorium < ActiveRecord::Base
-	validates :nombre, presence:true
+	validates :nombre, :detalle, presence:true
 end
