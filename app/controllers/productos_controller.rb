@@ -10,6 +10,7 @@ class ProductosController < ApplicationController
   # GET /productos/1
   # GET /productos/1.json
   def show
+        
   end
 
   # GET /productos/new
