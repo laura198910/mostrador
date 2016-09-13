@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Categoria</h1>
+<h1>Lista de Categoria</h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= categorium.nombre %></td>
         <td><%= categorium.detalle %></td>
-        <td><%= link_to 'Show', categorium %></td>
-        <td><%= link_to 'Edit', edit_categorium_path(categorium) %></td>
-        <td><%= link_to 'Destroy', categorium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', categorium %></td>
+        <td><%= link_to 'Editar', edit_categorium_path(categorium) %></td>
+        <td><%= link_to 'Borrar', categorium, method: :delete, data: { confirm: 'Estas seguro de Borrar?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Categorium', new_categorium_path %>
+<%= link_to 'Nueva Categoria', new_categorium_path %>
