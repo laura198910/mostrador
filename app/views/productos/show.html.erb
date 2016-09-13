@@ -1,5 +1,20 @@
 <p id="notice"><%= notice %></p>
 
+
+<h2>Ver  Producto</h2>
+<%= link_to  edit_producto_path(@producto), class:" btn btn-success" do  %>
+  Editar
+  <i class="glyphicon glyphicon-pencil"></i>
+  <% end %> |
+<%= link_to  productos_path, class:" btn btn-info" do  %>
+  Volver
+  <i class="glyphicon glyphicon-list"></i>
+  <% end %> 
+  <div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"></div>
+  <div class="panel-body">
+    <thead>
 <p>
   <strong>Nombre:</strong>
   <%= @producto.nombre %>
@@ -19,6 +34,11 @@
   <strong>Precio:</strong>
   <%= @producto.precio %>
 </p>
+</thead>
+</div>
+</div>
 
-<%= link_to 'Edit', edit_producto_path(@producto) %> |
-<%= link_to 'Back', productos_path %>
+
+
+
+
