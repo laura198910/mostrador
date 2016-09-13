@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+# Specify your gem's dependencies in devise-bootstrap-views.gemspec
+gem 'spec'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
@@ -26,6 +27,7 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
 gem 'devise-bootstrap-views'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
