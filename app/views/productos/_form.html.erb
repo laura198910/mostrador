@@ -2,33 +2,44 @@
   <%= f.error_notification %>
     
 <div class="row">
+<div class="jumbotron">
+<div class="container">
   <div class="col-md-4">
      <div class="field">
         <%= f.label :imagenproducto, "Imagen" %>
         <%= f.file_field :imagenproducto %><br><br>
-
         <%= f.collection_select( :categoria_id, Categorium.all, :id, :nombre, prompt:"Categoria") %>
     </div>
   </div>
+
+  <div class="col-md-2">
+  </div>
+
   <div class="col-md-4">
-    
   <div class="form-inputs">
    
     <%= f.input :nombre %><br><br>
     <%= f.input :descripcion %><br><br>
     <%= f.input :precio %>
+  </div>   
   </div>
-
-    
-  </div>
-  <div class="col-md-4">
-     <%= f.button :submit %>
-   </div>
-    
-  </div>
-      
+  
+</div>   
+</div>      
 </div>
 
+<div class="col-md-2"> 
+   </div>
 
+
+<div class="col-md-4"> 
+   </div>
+<div class="col-md-2"> 
+   </div>
+<div class="col-md-4">
+     <%= f.button :submit %>
+   </div>
+<div class="col-md-2"> 
+   </div>
   
 <% end %>
