@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   resources :presupuesto_detalles
   resources :presupuestos
   resources :productos

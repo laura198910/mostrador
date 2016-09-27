@@ -47,6 +47,10 @@ GEM
       sass (>= 3.3.4)
     builder (3.2.2)
     byebug (9.0.5)
+    carrierwave (1.0.0.beta)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     chronic_duration (0.10.6)
       numerizer (~> 0.1.1)
     coffee-rails (4.1.1)
@@ -176,6 +180,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   byebug
+  carrierwave (>= 1.0.0.beta, < 2.0)
   coffee-rails (~> 4.1.0)
   devise
   devise-bootstrap-views

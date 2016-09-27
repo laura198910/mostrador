@@ -1,9 +1,14 @@
+<style type="text/css">
+  .espacio{
+    padding-top: 20px;
+  }
+</style>
 
 <div class="row">
   <div class="col-md-2">
     
   </div>
-  <div class="col-xs-12 col-md-">
+    <div class="col-md-8">
     <div class="panel panel-default devise-bs">
   <div class="panel-heading">
     <h4><%= t('.sign_in', :default => "Iniciar Session") %></h4>
@@ -25,7 +30,7 @@
           <% end %>
         </div>
       <% end %>
-      <%= f.submit  t('.sign_in', :default => "Iniciar Session"), class: "btn btn-info" %>
+      <%= f.submit  t('.sign_in', :default => "Iniciar Session"), class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>
