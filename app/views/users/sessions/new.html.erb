@@ -26,16 +26,16 @@
       <% if devise_mapping.rememberable? %>
         <div class="checkbox">
           <%= f.label :remember_me do %>
-            <%= f.check_box :remember_me %> <%= t('.remember_me', :default => "Remember me") %>
+            <%= f.check_box :remember_me %> <%= t('.remember_me', :default => "Recordar  me") %>
           <% end %>
         </div>
       <% end %>
-      <%= f.submit  t('.sign_in', :default => "Iniciar Session"), class: "btn btn-primary" %>
+      <%= f.submit  t('.sign_in', :default => "Iniciar Session"), class: "btn btn-lg btn-primary btn-block btn-signin" %>
     <% end %>
   </div>
 </div>
   </div>
-    <div class="col-md-2">
+    <div class="col-md-12">
     
   </div>
 

@@ -3,3 +3,17 @@
 	width: 100px;
 	
 }
+.color-nav {
+	background: red;
+	
+}
+#btn-right {
+	float: right;
+}
+.tumbnail img {
+	width: 150px;
+	height: 150px
+}
+.producto-image img {
+	width: 50%;
+}
