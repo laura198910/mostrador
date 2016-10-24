@@ -1,12 +1,34 @@
 <%= simple_form_for(@categorium) do |f| %>
   <%= f.error_notification %>
+<div class="row">
+<div class="jumbotron">
+<div class="container">
+	<div class=" col-md-4">
+	</div>
+	<div class="col-md-4">
+  	<div class="field">
+    	<%= f.input :nombre %>
+    	<%= f.input :detalle %>
+  	</div>
+	</div>      
+	<div class="col-md-4"> 
+   	</div>
+</div>
+</div>
+</div>
+<div class="col-md-2"> 
+   </div>
 
-  <div class="form-inputs">
-    <%= f.input :nombre %>
-    <%= f.input :detalle %>
-  </div>
 
-  <div class="form-actions">
+<div class="col-md-4"> 
+   </div>
+<div class="col-md-2"> 
+   </div>
+<div class="col-md-4">
     <%= f.button :submit %>
-  </div>
+</div>
+ <div class="col-md-2"> 
+   </div>
+  
 <% end %>
+

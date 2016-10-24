@@ -1,5 +1,17 @@
 <p id="notice"><%= notice %></p>
+<h2>Ver  Categoria</h2>
 
+<%= link_to edit_categorium_path(@categorium),  class:" btn btn-success" do  %>
+  <i class="glyphicon glyphicon-pencil"></i>
+  <% end %> |
+<%= link_to categoria_path, class:" btn btn-info" do  %>
+  <i class="glyphicon glyphicon-hand-left"></i>
+  <% end %> 
+ <div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"></div>
+  <div class="panel-body">
+    <thead>
 <p>
   <strong>Nombre:</strong>
   <%= @categorium.nombre %>
@@ -9,6 +21,6 @@
   <strong>Detalle:</strong>
   <%= @categorium.detalle %>
 </p>
-
-<%= link_to 'Edit', edit_categorium_path(@categorium) %> |
-<%= link_to 'Back', categoria_path %>
+</thead>
+</div>
+</div>

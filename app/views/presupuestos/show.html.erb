@@ -12,3 +12,35 @@
 
 <%= link_to 'Edit', edit_presupuesto_path(@presupuesto) %> |
 <%= link_to 'Back', presupuestos_path %>
+
+
+
+
+#show.html.erb
+<h1>mostrando presupuesto </h1>
+<p> Fecha: <%= @presupuesto.fecha %> </p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Producto</th>
+			<th> Imagen</th>
+			<th> cantidad </th>
+			<th> Precio </th>
+			<th>subTotal </th>
+	</tr>
+	</thead>
+	<tbody>
+	
+
+			<% @presupuesto.presupuesto_detalles.each do |detalle| %>
+			<tr>
+			<td><%= detalle.producto.nombre %></td>
+			<td><%= image_tag(detalle.imagen.url, width: 100) %></td>
+			<td> <%= detalle.cantidad %> </td>
+			<td> <%= number_to_currency detalle.producto.precio %> </td>
+			<td><%= number_to_currency (detalle.cantidad * detalle.producto.precio) %> </td>
+			</tr>
+		<% end  %>
+</tbody>
+	

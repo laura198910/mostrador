@@ -1,12 +1,22 @@
 <p id="notice"><%= notice %></p>
+<div class="row">
+<div class="container">
+<div class="col-md-4">
+    <h2>Lista de Categoria</h2>
+</div>
+<div class="col-md-4">
+</div>
+<div class="col-md-4">
+    <%= link_to new_categorium_path, class: "btn btn-primary" do %>
+      <i class="glyphicon glyphicon-plus"></i>
+    <% end %>
+</div>
 
-<h1>Lista de Categoria</h1>
-
-<table>
+<table class="table table-striped table-hover ">
   <thead>
     <tr>
-      <th>Nombre</th>
-      <th>Detalle</th>
+      <th><b><i><center>Nombre</center></i></b></th>
+      <th><b><i><center>Detalle</center></i></b></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,14 +26,25 @@
       <tr>
         <td><%= categorium.nombre %></td>
         <td><%= categorium.detalle %></td>
-        <td><%= link_to 'Ver', categorium %></td>
-        <td><%= link_to 'Editar', edit_categorium_path(categorium) %></td>
-        <td><%= link_to 'Borrar', categorium, method: :delete, data: { confirm: 'Estas seguro de Borrar?' } %></td>
+
+        <td><%= link_to categorium, class:"btn btn-success"  do %>
+            <i class="glyphicon glyphicon-eye-open"></i>
+          <% end %>
+          <%= link_to edit_categorium_path(categorium), class:" btn btn-info" do  %>
+            <i class="glyphicon glyphicon-pencil"></i>
+          <% end %>
+          <%= link_to categorium, method: :delete, data: { confirm: 'Estas seguro?' }, class:'btn btn-danger' do %>
+            <i class="glyphicon glyphicon-trash"></i>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+</div>
+</div>
+</div>
 <br>
 
-<%= link_to 'Nueva Categoria', new_categorium_path %>
+
+

@@ -1,12 +1,19 @@
-<h1>Editing Producto</h1>
+
 <div class="container">
-  <h2>Lista de Productos</h2>
-
-
-<table class="table table-striped table-hover ">
-<%= render 'form' %>
-
-<%= link_to 'Show', @producto %> |
-<%= link_to 'Back', productos_path %>
-</table>
+	<div class="row">
+	<div class="col-md-4">
+  		<h2>Editar Producto</h2>
+	</div>
+	<div class="col-md-4">
+ 	</div>
+ 	<div class="col-md-4">
+		<%= link_to 'Ver', @producto, :class => 'btn btn-primary', :class=>'glyphicon glyphicon-eye-open' %> |
+		<%= link_to 'Atras', productos_path, :class => 'btn btn-primary', :class=>'glyphicon glyphicon-hand-left'  %>
+	</div>
+	</div>
+	<table class="table table-striped table-hover table-responsive">
+		<%= render 'form' %>
+	</table>
+	
 </div>
+  
