@@ -17,3 +17,41 @@
 .producto-image img {
 	width: 50%;
 }
+.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+.footer a {
+  color: #555;
+}
+.footer a:hover {
+  color: #222;
+}
+.footer small {
+  float: left;
+}
+.footer ul {
+  float: right;
+  list-style: none;
+}
+.footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+.panel {
+  width: 150px;
+  height: 150px;
+}
+//navbar
+$navbar-inverse-bg: #6dbcdb;
+$navbar-inverse-border: #6dbcdb;
+// Inverse navbar
+
+  .espacio{
+    padding-top: 20px;
+  }
+.fondo {
+  background-image: url("http://www.fandroides.com/wp-content/uploads/2014/05/wall4.jpg");
+}

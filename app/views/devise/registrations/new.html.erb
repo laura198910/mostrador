@@ -1,5 +1,23 @@
-<h2>Sign up</h2>
+<div class="fondo">
+	
 
+
+<div class="col-md-4">
+
+<% provide(:title, "Sing up") %>
+<div class="l-wrap--b">
+ <h1 class="t-display page__heading">
+ <a class="t-link--black" >Registro</a>
+ </h1>
+ <main class="main--interior">
+
+<div class="table-responsive">
+<div class="panel panel-danger width:50">
+</div>
+
+</div>
+
+<form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="IcbLdmqB6OV3kNjm0EhiY7RFqu6oB1E+OD6lN8Em6OcLwdNGSSvoks0zOoc4MoYb9xs6kv/1Bl8TOHGm6nhEDQ==" />
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
@@ -15,3 +33,22 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+<div class="panel panel-danger width:"50" >
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+	
+</div>
+
+
+
+
+</div>
+
+<div class="col-md-4">
+	
+</div>
+

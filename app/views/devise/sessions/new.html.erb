@@ -1,15 +1,60 @@
-<h2>Log in</h2>
+
+
+<div class="fondo">
+	
+
+
+<div class="col-md-4">
+<% provide(:title, "Log in") %>
+<div class="l-wrap--b">
+ <h1 class="t-display page__heading">
+ <a class="t-link--black" >Ingresar</a>
+ <div class="panel panel-danger width:50">
+
+ </h1>
+
+ <main class="main--interior">
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
-    <%= f.input :email, required: false, autofocus: true %>
-    <%= f.input :password, required: false %>
+    <%= f.input :email,  required: false, autofocus: true, class: 'form-control' %>
+    <%= f.input :password, required: false, class: 'form-control' %>
+    
     <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
+    <div class="form_bottom">
+    <input type="submit" name="commit" value="Ingresar" 
+    data-disable-with="Un momento por favor..." class="glyphicons glyphicons-lock" />
   </div>
+</div>
+</form>
+</main>
 <% end %>
-
 <%= render "devise/shared/links" %>
+<div class="panel panel-danger width:"50" >
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+   
+  </div>
+  ...
+</div>
+
+	
+
+</div>
+
+
+
+
+
+</div>
+
+<div class="col-md-4">
+	
+</div>
+
