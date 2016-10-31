@@ -1,5 +1,12 @@
-<h1>New Presupuesto</h1>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', presupuestos_path %>
+<div class="row">
+	<div class="col-md-4">
+		<h2>Nuevo Presupuesto</h2>
+	</div>
+  	<div class="col-md-4">
+ 	</div>
+ 	<div class="col-md-4">
+ 		<%= link_to 'Atras', presupuestos_path, :class => 'btn btn-primary', :class => 'glyphicon glyphicon-hand-left' %>
+ 	</div>
+ 	</div>
+	<%= render 'form' %>
