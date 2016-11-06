@@ -1,18 +1,24 @@
 <div class="col-sm-3 col-lg-3 col-md-3">
-  <div class="thumbnail ">
+  <div class="thumbnail">
     <%=image_tag(producto.imagenproducto.url,class: "img-responsive") 
      %>
-    </div>
+    
     <div class="caption">
       <h4 class="pull - right">$<%=producto.precio%></h4>
       <h4><%= producto.descripcion %></h4>
 
         <div class="btn-list">
-        <button type="button" class="btn btn-default btn-sm">Agregar a Carrito</button>
-
-
+        <%= link_to presupuesto_detalles_path(producto), class:"btn btn-success"  do %>
+           
+            <i class="glyphicon glyphicon-shopping-cart"></i>
+          <% end %>
+          <%= link_to edit_producto_path(producto), class:" btn btn-info" do  %>
+            
+            <i class="glyphicon glyphicon-eye-open"></i>
+          <% end %>
     
    
+      </div>
     </div>
   </div>
 </div>

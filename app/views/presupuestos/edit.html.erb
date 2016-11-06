@@ -1,6 +1,19 @@
-<h1>Editing Presupuesto</h1>
 
-<%= render 'form' %>
+<div class="container">
+<div class="row">
+	<div class="col-md-4">
+		<h2>Editar Presupuesto</h2>
+	</div>
+	<div class="col-md-4">
+ 	</div>
+ 	<div class="col-md-4">
+ 		<%= link_to 'Ver', @presupuesto, :class => 'btn btn-primary', :class=>'glyphicon glyphicon-eye-open' %> |
+		<%= link_to 'Atras', presupuestos_path, :class => 'btn btn-primary', :class=>'glyphicon glyphicon-hand-left'  %>
+	</div>
+</div>
+	<table class="table table-striped table-hover table-responsive">
+		<%= render 'form' %>
 
-<%= link_to 'Show', @presupuesto %> |
-<%= link_to 'Back', presupuestos_path %>
+	</table>
+	
+</div>

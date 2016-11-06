@@ -201,7 +201,7 @@
         <span class="icon-bar"></span>
       </button>
  <a class="brand">
-    <%= link_to(image_tag("logo2.jpg", :size => "60x50"), root_path)  %>
+    <%= link_to(image_tag("images1.png", :size => "80x40"), root_path)  %>
   </a>        </div>
 
         <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -219,9 +219,7 @@
           </ul>
         </li>
       </ul>
-      <p> </p>
-
-
+    
  <ul class="nav navbar-nav navbar-right">
  <% if user_signed_in? %>
   Bienvenida <strong><%= current_user.email %></strong>.
@@ -234,7 +232,7 @@
 </nav>
 </ul>
    
-
+<br><br><br>
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>
@@ -254,52 +252,29 @@
 <body>
     
 <br /><br /><br /><br /><br />
-    <section id="footer" style="background-color:#292b34;">
+    <section id="footer" style="background-color:red;">
         <div class="container">
-        <center style="color:#fff;">
+        <center style="color:white;">
         <div class="container">
-            <div class="well well-sm main-footer"  style="background-color:#292b34; border:0px">
+            
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h1 class="title-footer">
-                                    MOSTRADOR</h1>
-                            </div><!--end .col-md-4-->
-                            
-                            <div class="col-md-4 contact-email">
-                                <h2>
-                                    <a href="https://github.com/laura198910/LAURA">mostrador@.com</a></h2>
-                                <h3>
-                                    © Copyright Mostrador.SitioWeb 2016</h3>
-                            </div><!--end .col-md-4 .contact-email-->
-                            <div class="col-md-4">
-                                <div class="row contact row-first">
-                                    <div class="col-md-12">
-                                        <a href="skype:nico.plyley?chat" class="skype"><i class="fa fa-skype"></i>PatyCaballero@gmail.com</a>
-                                    </div><!--end .col-md-6-->
-                                   
-                                </div><!--end .row .contact .row-first-->
-                                <div class="row contact">
-                                    
-                                    <div class="col-md-12">
-                                        <a href="http://twitter.com/nicoplyley" class="twitter"><i class="fa fa-twitter"></i>lauragamarra@gmail.com</a>
-                                    </div><!--end .col-md-6-->
-                                
-                            </div><!--end .col-md-6-->
-                        </div><!--end .row-->
-                    </div><!--end .col-md-12-->
+                      <div class="col-md-4">
+                           <h1 class="title-footer">
+                                Tienda On Line</h1>
+                      </div><!--end .col-md-4-->
+                       <div class="col-md-4">
+                          <p> Caballero, Patricia</p>
+                          <p> Gamarra, Laura</p>
+                      </div> 
+                    <div class="col-md-4 contact-email">
+                        <p> © Copyright </p>
+                        <p>Analisis de Sistemas.UNAE 2016</p>
+                    </div><!--end .col-md-4 .contact-email-->
                 </div><!--end .row-->
-            </div><!--end .well .well-sm .main-footer-->
+            
         </div><!--end .container-->
         </center>
       </div><!--end .container-->
-  <small>
-    The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    by <a href="http://www..com/">LauraGamarra</a>
-    by <a href="http://www..com/">PatriciaCaballero</a>
-
-  </small>
     </section><!--end #footer-->
     <!-- Sticky Footer -->
     <script type="text/javascript" src="js/footer.js"></script>

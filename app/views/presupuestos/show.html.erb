@@ -1,5 +1,18 @@
-<p id="notice"><%= notice %></p>
 
+<p id="notice"><%= notice %></p>
+<h2>Ver  Presupuesto</h2>
+
+<%= link_to edit_presupuesto_path(@presupuesto),  class:" btn btn-success" do  %>
+  <i class="glyphicon glyphicon-pencil"></i>
+  <% end %> |
+  <%= link_to  presupuestos_path, class:" btn btn-info" do  %>
+  <i class="glyphicon glyphicon-hand-left"></i>
+  <% end %> 
+ <div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"></div>
+  <div class="panel-body">
+    <thead>
 <p>
   <strong>Presupuesto:</strong>
   <%= @presupuesto.presupuesto_id %>
@@ -9,38 +22,11 @@
   <strong>Fecha:</strong>
   <%= @presupuesto.fecha %>
 </p>
-
-<%= link_to 'Edit', edit_presupuesto_path(@presupuesto) %> |
-<%= link_to 'Back', presupuestos_path %>
-
-
+</thead>
+</div>
+</div>
 
 
-#show.html.erb
-<h1>mostrando presupuesto </h1>
-<p> Fecha: <%= @presupuesto.fecha %> </p>
 
-<table>
-	<thead>
-		<tr>
-			<th>Producto</th>
-			<th> Imagen</th>
-			<th> cantidad </th>
-			<th> Precio </th>
-			<th>subTotal </th>
-	</tr>
-	</thead>
-	<tbody>
-	
 
-			<% @presupuesto.presupuesto_detalles.each do |detalle| %>
-			<tr>
-			<td><%= detalle.producto.nombre %></td>
-			<td><%= image_tag(detalle.imagen.url, width: 100) %></td>
-			<td> <%= detalle.cantidad %> </td>
-			<td> <%= number_to_currency detalle.producto.precio %> </td>
-			<td><%= number_to_currency (detalle.cantidad * detalle.producto.precio) %> </td>
-			</tr>
-		<% end  %>
-</tbody>
-	
+
