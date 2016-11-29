@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   resources :productos
   resources :categoria
   resources :productos
+  resources :home do 
+    member do
+      post "add"
+    end
+  end
   devise_for :users
   root "home#index"
 

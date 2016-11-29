@@ -8,7 +8,7 @@
       <h4><%= producto.descripcion %></h4>
 
         <div class="btn-list">
-        <%= link_to presupuesto_detalles_path(producto), class:"btn btn-success"  do %>
+        <%= link_to add_home_path(producto), class:"btn btn-success", method: :post  do %>
            
             <i class="glyphicon glyphicon-shopping-cart"></i>
           <% end %>
