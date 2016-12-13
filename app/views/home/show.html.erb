@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Presupuesto</h1>
+
+<td class="btn-group-vertical">
+  <table class="table table-striped table-hover ",class="panel panel-primary">
+  <div class="panel panel-primary">
+  <thead>
+    <tr>
+      <th>  Imagen </th>
+      <th>  Nombre</th>
+      <th>  Descripcion</th>
+      <th>  Cantidad</th>
+      <th>  Precio</th>
+      <th>  Sub Total</th>
+      <th></th>
+     
+    </tr>
+</td>
+  </thead>
+</div>
+  <tbody>
+    
+  <% @presupuesto.presupuesto_detalles.each do |detalle| %>
+      <tr>
+      
+       <td><%= image_tag detalle.producto.imagenproducto, class:"", height: 80  %></td>
+        <td><%= detalle.producto.nombre %></td>
+        <td><%= detalle.producto.descripcion%> </td>
+        <td><%= detalle.cantidad%> </td>
+        <td><%= detalle.producto.precio %></td>
+        <td><%= subtotal = detalle.producto.precio * detalle.cantidad %></td>
+        <td>
+          <div class="btn-group">
+        <%= link_to 'Agregar', sumarProducto_producto_path(detalle.producto), method: "put", class:"btn btn-primary btn-xs" %>
+        <%= link_to 'Descontar', eliminar_producto_path(detalle.producto), method: "delete", class:"btn btn-warning btn-xs" %>
+          <%= link_to 'Eliminar' , detalle, method: :delete, data:{ confirm: 'Estas seguro de borrar ' }, class:"btn btn-danger btn-xs" %>
+          </div>
+      </td>
+    <% end %>
+  </tbody>
+</table>
+<br>

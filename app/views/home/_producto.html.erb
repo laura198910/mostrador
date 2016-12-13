@@ -1,6 +1,6 @@
 <div class="col-sm-4 col-lg-4 col-md-4">
   <div class="thumbnail">
-    <%=image_tag(producto.imagenproducto.url,class: "img-responsive") %>
+    <%=image_tag(producto.imagenproducto.url, width: 300, height: 300) %>
     
     <div class="caption">
       <h4 class="pull - right">$<%=producto.precio%></h4>
@@ -21,3 +21,24 @@
     </div>
   </div>
 </div>
+
+
+
+
+ <div class="col-sm-3 col-md-4">
+  
+      <%=image_tag(producto.imagenproducto.url, width: 300, height: 300) %>
+      <div class="caption">
+        <h3><%= producto.nombre %></h3>
+        <p><strong>Descripcion: </strong><%= producto.descripcion %></p>
+        <p><strong>Precio: </strong><%= producto.precio %></p>
+        <%= link_to add_home_path(producto), class:"btn btn-success", method: :post  do %>
+           
+            <i class="glyphicon glyphicon-shopping-cart"></i>
+          <% end %>
+        
+      </div>
+
+  </div>
+
+
