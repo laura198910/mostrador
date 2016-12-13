@@ -11,7 +11,7 @@
 	
 }
 .color-nav {
-	background: red;
+	background: #FA8072;
 	
 }
 #btn-right {
@@ -55,10 +55,8 @@
   .espacio{
     padding-top: 20px;
   }
-.fondo {
-  background-image: url("http://www.fandroides.com/wp-content/uploads/2014/05/wall4.jpg");
-}
+
 .nabvar{
-        color: #777;
+        color: #FA8072;
         width: 150px;
 }

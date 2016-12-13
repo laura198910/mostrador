@@ -15,11 +15,12 @@ def add
 	else
 		@presupuesto = Presupuesto.new(fecha: Date.today)
 	end
-puts '*******************************jhbhhjjhhjk***********************************************************'
+
 	puts params.inspect
 	producto = Producto.find(params[:id])
 
 	detalle = @presupuesto.presupuesto_detalles.where(producto_id: producto.id).first
+	
 	if detalle
 		detalle.cantidad +=1
 	else

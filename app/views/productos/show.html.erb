@@ -6,30 +6,42 @@
 <%= link_to  productos_path, class:" btn btn-info" do  %>
   <i class="glyphicon glyphicon-hand-left"></i>
   <% end %> 
+
+  <br><br>
   <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading"></div>
+  <!--div class="panel-heading"></div -->
   <div class="panel-body">
     <thead>
-<p>
-  <strong>Nombre:</strong>
-  <%= @producto.nombre %>
-</p>
+    <div class="col-md-4">
+      <p>
+        <strong>Nombre:</strong>
+        <%= @producto.nombre %>
+      </p>
 
-<p>
-  <strong>Descripcion:</strong>
-  <%= @producto.descripcion %>
-</p>
+      <p>
+        <strong>Descripcion:</strong>
+        <%= @producto.descripcion %>
+      </p>
 
-<p>
-  <strong>Categoria:</strong>
-  <%= @producto.categoria_id %>
-</p>
+      <p>
+        <strong>Categoria:</strong>
+        <%= @producto.categoria_id %>
+      </p>
 
-<p>
-  <strong>Precio:</strong>
-  <%= @producto.precio %>
-</p>
+      <p>
+       <strong>Precio:</strong>
+       <%= @producto.precio %>
+      </p>
+    </div>
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-4">
+      <p>
+        <strong></strong>
+        <%= image_tag(@producto.imagenproducto.url) %>
+      </p>
+    </div>
 </thead>
 </div>
 </div>
