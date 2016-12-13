@@ -1,4 +1,4 @@
-class CategoriaController < ApplicationController
+ class CategoriaController < ApplicationController
   before_action :set_categorium, only: [:show, :edit, :update, :destroy]
 
   # GET /categoria
@@ -6,7 +6,7 @@ class CategoriaController < ApplicationController
   def index
     @categoria = Categorium.all
   end
-
+ 
   # GET /categoria/1
   # GET /categoria/1.json
   def show

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-
+  get 'home/index'
+  get 'home/show'
+  get 'home/_contar_compra'
 
   resources :presupuesto_detalles
   resources :presupuestos
