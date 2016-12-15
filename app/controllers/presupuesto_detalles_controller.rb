@@ -1,5 +1,5 @@
 class PresupuestoDetallesController < ApplicationController
-   skip_before_filter :authenticate_usuario!
+   #skip_before_filter :authenticate_usuario!
   before_action :set_presupuesto_detalle, only: [:show, :edit, :update, :destroy]
 
   # GET /presupuesto_detalles

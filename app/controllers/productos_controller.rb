@@ -160,6 +160,7 @@ end
     respond_to do |format|
       format.html { redirect_to productos_url, notice: 'Producto borrado.' }
       format.json { head :no_content }
+      redirect_to home_index_path
     end
   end
 
@@ -174,4 +175,3 @@ end
       params.require(:producto).permit(:nombre, :descripcion, :categoria_id, :precio, :imagenproducto, :nombre)
 
     end
-end
