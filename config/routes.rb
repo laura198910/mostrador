@@ -1,19 +1,24 @@
-Rails.application.routes.draw do
+ Rails.application.routes.draw do
   get 'home/index'
   get 'home/show'
   get 'home/_contar_compra'
 
+  devise_for :users
   resources :presupuesto_detalles
   resources :presupuestos
   resources :productos
   resources :categoria
-  resources :productos
-  resources :home do 
+
+  resources :add
+
+  resources :productos  do
     member do
-      post "add"
+      post 'add'
+      post 'sumarProducto'
+      delete 'eliminar'
+      get 'sumar_carrito'
     end
-  end
-  devise_for :users
+end
   root "home#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
