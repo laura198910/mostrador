@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -211,6 +210,7 @@
             </ul>
           </li>
         </ul>
+      <div>
 
         <ul class="nav navbar-nav navbar-right">
          <% if user_signed_in? %>
@@ -268,9 +268,5 @@
     </div><!--end .container-->
   </section><!--end #footer-->
   <!-- Sticky Footer -->
-  <script type="text/javascript" src="js/footer.js"></script>
-  <!-- Fade Contact Footer -->
-  <script type="text/javascript" src="js/contactFade.js"></script>
-  <script src="//railsgirls.com/assets/bootstrap.js"></script>
 </body>
 </html>
