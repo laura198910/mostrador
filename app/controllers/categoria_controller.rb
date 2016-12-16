@@ -56,7 +56,7 @@
   def destroy
     @categorium.destroy
     respond_to do |format|
-      format.html { redirect_to categoria_url, notice: 'Categorium was successfully destroyed.' }
+      format.html { redirect_to categoria_url, notice: 'Categoria Eliminado.' }
       format.json { head :no_content }
     end
   end
