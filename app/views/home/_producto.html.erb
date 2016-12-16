@@ -5,7 +5,7 @@
         <h3><%= producto.nombre %></h3>
         <p><strong>Descripcion: </strong><%= producto.descripcion %></p>
         <p><strong>Precio: </strong><%= producto.precio %></p>
-        <%= link_to add_home_path(producto), class:"btn btn-success", method: :post  do %>
+        <%= link_to add_producto_path(producto), class:"btn btn-success", method: :post  do %>
            
             <i class="glyphicon glyphicon-shopping-cart"></i>
           <% end %>
