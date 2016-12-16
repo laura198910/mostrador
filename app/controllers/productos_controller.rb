@@ -121,6 +121,7 @@ end
 
   # GET /productos/1/edit
   def edit
+    @producto = Producto.find(params[ :id]);
   end
 
   # POST /productos
